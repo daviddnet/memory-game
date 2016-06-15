@@ -1,0 +1,18 @@
+.memory-game .card {    
+    width: 80px;
+    height: 100px;
+    margin: 10px 0px;
+    border: solid 2px;
+}
+    .memory-game .card:hover {
+        border: solid 3px;    
+        border-color: red;
+        cursor: pointer;        
+    }
+
+.memory-game .hidden-card {
+    background: url('../images/question_mark.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
