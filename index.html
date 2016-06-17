@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Concentration Game</title>
+    <title>Concentration Game - Copa América Centenario</title>
     <link rel="stylesheet" href="resources/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="resources/game.css">
 
@@ -12,113 +12,115 @@
     <script src="resources/game.js"></script>
 </head>
 <body>
-    
-
     <div class="container memory-game">
         <h1>Copa America Centenario</h1>
         <h2>Memory Game</h2>
         <div class="row">
+            <div class="col-xs-4"><input type="text" id="gameTimer" readonly="true" ></div>
+            <div class="col-xs-4"><button class="btn btn-success pull-right" id="actionButton">Start</button></div>
+        </div>
+        <div class="row">
             <div class="col-xs-1">
-                <div class="card flag-pa"></div>
+                <div id="card0" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card1" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card2" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card3" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card4" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card5" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card6" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card7" class="card hidden-card"></div>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card8" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card9" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card10" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card11" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card12" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card13" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card14" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-1">
-                <div class="card hidden-card"></div>
-            </div>
-            <div class="col-xs-1">
-                <div class="card hidden-card"></div>
-            </div>
-            <div class="col-xs-1">
-                <div class="card hidden-card"></div>
-            </div>
-            <div class="col-xs-1">
-                <div class="card hidden-card"></div>
-            </div>
-            <div class="col-xs-1">
-                <div class="card hidden-card"></div>
-            </div>
-            <div class="col-xs-1">
-                <div class="card hidden-card"></div>
-            </div>
-            <div class="col-xs-1">
-                <div class="card hidden-card"></div>
-            </div>
-            <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card15" class="card hidden-card"></div>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card16" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card17" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card18" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card19" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card20" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card21" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card22" class="card hidden-card"></div>
             </div>
             <div class="col-xs-1">
-                <div class="card hidden-card"></div>
+                <div id="card23" class="card hidden-card"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">
+                <div id="card24" class="card hidden-card"></div>
+            </div>
+            <div class="col-xs-1">
+                <div id="card25" class="card hidden-card"></div>
+            </div>
+            <div class="col-xs-1">
+                <div id="card26" class="card hidden-card"></div>
+            </div>
+            <div class="col-xs-1">
+                <div id="card27" class="card hidden-card"></div>
+            </div>
+            <div class="col-xs-1">
+                <div id="card28" class="card hidden-card"></div>
+            </div>
+            <div class="col-xs-1">
+                <div id="card29" class="card hidden-card"></div>
+            </div>
+            <div class="col-xs-1">
+                <div id="card30" class="card hidden-card"></div>
+            </div>
+            <div class="col-xs-1">
+                <div id="card31" class="card hidden-card"></div>
             </div>
         </div>
         

@@ -20,8 +20,70 @@ h1, h2 {
     background-size: contain;
 }
 
+
+
 /*flags*/
+
+.flag-ar {
+    background: url('../images/flags/ar.png') no-repeat center center;
+}
+
+.flag-bo {
+    background: url('../images/flags/bo.png') no-repeat center center;
+}
+
+.flag-br {
+    background: url('../images/flags/br.png') no-repeat center center;
+}
+
+.flag-cl {
+    background: url('../images/flags/cl.png') no-repeat center center;
+}
+
+.flag-co {
+    background: url('../images/flags/co.png') no-repeat center center;
+}
+
+.flag-cr {
+    background: url('../images/flags/cr.png') no-repeat center center;
+}
+
+.flag-ec {
+    background: url('../images/flags/ec.png') no-repeat center center;
+}
+
+.flag-ht {
+    background: url('../images/flags/ht.png') no-repeat center center;
+}
+
+.flag-jm {
+    background: url('../images/flags/jm.png') no-repeat center center;
+}
+
+.flag-mx {
+    background: url('../images/flags/mx.png') no-repeat center center;
+}
 
 .flag-pa {
     background: url('../images/flags/pa.png') no-repeat center center;
+}
+
+.flag-pe {
+    background: url('../images/flags/pe.png') no-repeat center center;
+}
+
+.flag-py {
+    background: url('../images/flags/py.png') no-repeat center center;
+}
+
+.flag-us {
+    background: url('../images/flags/us.png') no-repeat center center;
+}
+
+.flag-uy {
+    background: url('../images/flags/uy.png') no-repeat center center;
+}
+
+.flag-ve {
+    background: url('../images/flags/ve.png') no-repeat center center;
 }
