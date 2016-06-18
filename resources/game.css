@@ -8,6 +8,7 @@ h1, h2 {
     margin: 10px 0px;
     border: solid 2px;
     min-width: 28px;
+    background-size: contain;
 }
     .memory-game .card:hover {
         border: solid 3px;    

@@ -17,11 +17,16 @@ var MemoryGame = function () {
         });
 
         $(".card").on("click", function() {
-            if (_gameStarted) {
-                var cardId =  parseInt($(this).attr('id').replace('card',''));
-                
-                console.log(_flags[cardId]);
-            }            
+            if (!_gameStarted) {
+                start();
+            }   
+
+            var cardId =  parseInt($(this).attr('id').replace('card',''));
+            var flag = _flags[cardId];
+
+            $(this).removeClass();
+            $(this).addClass("card");
+            $(this).addClass("flag-" + flag);         
         });
     };
 
@@ -72,10 +77,15 @@ var MemoryGame = function () {
             $("#gameTimer").val("");
         }
 
+        $(".card").removeClass().addClass("card hidden-card");
+
         $("#actionButton")
             .html("Start")
             .removeClass("btn-primary")
             .addClass("btn-success");
+
+        //test Audio
+        document.getElementById("golAudio").play();
     };  
 
     return {
