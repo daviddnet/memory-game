@@ -21,7 +21,10 @@ h1, h2 {
     background-size: contain;
 }
 
-
+.memory-game h3.congrats {
+    text-align: center;
+    color: red;
+}
 
 /*flags*/
 
